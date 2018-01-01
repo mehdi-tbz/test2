@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+    <head>
+       <title>Person Information</title>
+       <link rel="stylesheet" type="text/css" href="./css/style.css">
+    </head>
+    <body>
+        <fieldset>
+            <legend>Adding a Contact</legend>
+            First Name: <input type="text" id="firstName" placeholder="Your first name..."/>
+            </br>
+            Last Name: <input type="text" id="lastName" placeholder="Your last name..."/>
+            </br>
+            Phone Number: <input type="text" id="phoneNumber" placeholder="Your phone number..."/>
+            </br>
+            Expertise: <input type="text" id="expertise" placeholder="Your expertise..."/>
+            </br>
+            Work Experience: <textarea rows="4" cols="50" id="workExperience"> </textarea>
+            </br>
+            <button onclick="showContact();">Show Contact</button>
+        </fieldset>
+        <div id="showContact">
+            <table id="contacts-table">
+                <tr>
+                    <th class="value">Name</th>
+                    <th class="value">Phone Number</th>
+                    <th class="value">Expertise</th>
+                    <th class="value">Work Experience:</th>
+                </tr>
+            </table>
+        </div>
+        <script src="./js/main.js"></script>
+    </body>
+</html>
